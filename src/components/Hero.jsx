@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="flex-1 w-full">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" 
+                src="I" 
                 alt="Dah Amayon" 
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
