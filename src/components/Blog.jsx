@@ -1,24 +1,12 @@
+import { articlesData } from '../data/articlesData'
+
 const Blog = () => {
-  const articles = [
-    {
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=300&fit=crop",
-      title: "Le Retour Affectif : Comment ça marche ?",
-      excerpt: "Découvrez les secrets des rituels de retour affectif et comment ils peuvent vous aider à reconquérir l'amour perdu...",
-      link: "#"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop",
-      title: "Protection Spirituelle du Couple",
-      excerpt: "Apprenez comment protéger votre relation amoureuse contre les énergies négatives et les influences extérieures...",
-      link: "#"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400&h=300&fit=crop",
-      title: "Signes d'Envoutement Amoureux",
-      excerpt: "Reconnaître les symptômes d'un envoûtement et savoir quand consulter un marabout pour un désenvoutement...",
-      link: "#"
-    }
-  ]
+  const articles = articlesData.map(article => ({
+    image: article.heroImage,
+    title: article.title,
+    excerpt: article.excerpt,
+    link: `/blog/${article.slug}`
+  }))
 
   return (
     <section id="blog" className="py-12 sm:py-16 lg:py-20 bg-vert-clair animate-section">
@@ -61,7 +49,7 @@ const Blog = () => {
 
         <div className="text-center">
           <a 
-            href="#"
+            href="/blog"
             className="inline-block bg-vert-profond text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-opacity-90 transition"
           >
             Découvrir tous nos articles
