@@ -1,16 +1,14 @@
 import { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import WhyChoose from './components/WhyChoose'
-import ExpressSolutions from './components/ExpressSolutions'
-import PersonalizedSolutions from './components/PersonalizedSolutions'
-import Testimonials from './components/Testimonials'
-import About from './components/About'
-import Blog from './components/Blog'
-import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
+import Home from './pages/Home'
+import AboutPage from './pages/AboutPage'
+import BlogPage from './pages/BlogPage'
+import ContactPage from './pages/ContactPage'
 import './App.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -33,18 +31,19 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <WhyChoose />
-      <ExpressSolutions />
-      <PersonalizedSolutions />
-      <Testimonials />
-      <About />
-      <Blog />
-      <CallToAction />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/a-propos" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
+    </Router>
   )
 }
 
