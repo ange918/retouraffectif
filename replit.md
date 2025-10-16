@@ -1,38 +1,72 @@
-# Retour Affectif
+# Site Web Marabout Dah Amayon - Retour Affectif
 
-## Overview
-A React + Vite application providing a minimal setup for React development with HMR (Hot Module Replacement) and ESLint rules.
+## Vue d'ensemble
+Site web professionnel pour Dah Amayon, marabout spécialisé en retour affectif et spiritualité traditionnelle, destiné à un public en France et en Afrique.
 
-## Project Information
-- **Framework**: React 19.1.1
-- **Build Tool**: Vite 7.1.10
+## Technologies utilisées
+- **Framework**: React 19.1.1 avec Vite 7.1.10
+- **Styling**: Tailwind CSS v3
+- **Animations**: GSAP avec ScrollTrigger
 - **Language**: JavaScript (ES Modules)
 - **Package Manager**: npm
 
-## Project Structure
-- `src/` - Source code
-  - `App.jsx` - Main application component
-  - `main.jsx` - Application entry point
-  - `assets/` - Static assets (images, etc.)
-- `public/` - Public static files
-- `index.html` - HTML entry point
+## Structure du projet
+```
+src/
+├── components/
+│   ├── Header.jsx          # Navigation et menu mobile
+│   ├── Hero.jsx            # Section héro avec CTA
+│   ├── WhyChoose.jsx       # Pourquoi choisir Dah Amayon (3 cards)
+│   ├── ExpressSolutions.jsx # Solutions express 24/7
+│   ├── PersonalizedSolutions.jsx # Services personnalisés
+│   ├── Testimonials.jsx    # Témoignages clients
+│   ├── About.jsx           # À propos avec carrousel
+│   ├── Blog.jsx            # Articles de blog
+│   ├── CallToAction.jsx    # CTA final
+│   └── Footer.jsx          # Pied de page complet
+├── App.jsx                 # Application principale
+├── index.css              # Styles globaux Tailwind
+└── main.jsx               # Point d'entrée
+```
 
-## Development
-The development server runs on port 5000 with HMR enabled. The Vite configuration has been optimized for the Replit environment:
-- Server binds to `0.0.0.0:5000` for proper proxy routing
-- HMR WebSocket configured for Replit's secure connection
-- Preview mode also configured for port 5000
+## Fonctionnalités
+- ✅ Design responsive mobile-first
+- ✅ Animations fluides au scroll (GSAP)
+- ✅ Menu de navigation avec scroll vers sections
+- ✅ Boutons WhatsApp et Email pour contact rapide
+- ✅ Carrousel d'images automatique
+- ✅ Design moderne avec palette verte personnalisée
+- ✅ Polices Google Fonts (Poppins & Playfair Display)
 
-## Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+## Palette de couleurs
+- **Vert clair**: #C8E6C9 (backgrounds)
+- **Vert profond**: #14532D (textes principaux)
+- **Doré**: #FFD700 (accents)
+- **Blanc et gris**: pour contraste et lisibilité
 
-## Deployment
-The project is configured for autoscale deployment with:
-- Build command: `npm run build`
-- Run command: `npx vite preview --host 0.0.0.0 --port`
+## Contact
+- **Téléphone**: +229 01 91 00 75 56
+- **Email**: dahamayon8@gmail.com
+- **Adresses**: 
+  - 60 Sq. de la Couronne, 30000 Nîmes, France
+  - Cotonou, Bénin
 
-## Last Updated
-October 16, 2025 - Initial Replit environment setup
+## Développement
+```bash
+npm run dev      # Démarrer le serveur de développement (port 5000)
+npm run build    # Compiler pour production
+npm run preview  # Prévisualiser la version de production
+```
+
+## Configuration Replit
+- Le serveur Vite est configuré pour écouter sur `0.0.0.0:5000`
+- HMR WebSocket configuré pour l'environnement Replit
+- Deployment configuré en mode "autoscale"
+
+## Améliorations futures suggérées
+1. Héberger les images localement au lieu d'utiliser Unsplash
+2. Ajouter des animations GSAP plus riches pour les éléments individuels
+3. Implémenter un système de blog dynamique avec CMS
+
+## Dernière mise à jour
+16 octobre 2025 - Implémentation complète du site avec toutes les sections demandées

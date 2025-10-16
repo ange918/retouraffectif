@@ -47,10 +47,10 @@ const Header = () => {
       {menuOpen && (
         <nav className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <a href="#accueil" className="text-vert-profond hover:text-dore transition">Accueil</a>
-            <a href="#apropos" className="text-vert-profond hover:text-dore transition">À propos</a>
-            <a href="#blog" className="text-vert-profond hover:text-dore transition">Blog</a>
-            <a href="#contact" className="text-vert-profond hover:text-dore transition">Contact</a>
+            <a href="#accueil" onClick={() => setMenuOpen(false)} className="text-vert-profond hover:text-dore transition">Accueil</a>
+            <a href="#apropos" onClick={() => setMenuOpen(false)} className="text-vert-profond hover:text-dore transition">À propos</a>
+            <a href="#blog" onClick={() => setMenuOpen(false)} className="text-vert-profond hover:text-dore transition">Blog</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)} className="text-vert-profond hover:text-dore transition">Contact</a>
             <a 
               href="https://wa.me/2290191007556" 
               target="_blank" 
