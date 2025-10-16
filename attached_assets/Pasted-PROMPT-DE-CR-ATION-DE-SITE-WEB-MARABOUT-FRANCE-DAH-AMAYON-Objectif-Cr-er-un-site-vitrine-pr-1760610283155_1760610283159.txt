@@ -1,0 +1,98 @@
+PROMPT DE CRÉATION DE SITE WEB : MARABOUT FRANCE - DAH AMAYON
+
+Objectif : Créer un site vitrine professionnel moderne et mystique pour le marabout “Dah Amayon”, expert en retour affectif et spiritualité traditionnelle, destiné à un public en France et en Afrique.
+
+Technos : HTML + Tailwind CSS + JS (GSAP pour animations)  
+Structure fluide, responsive, moderne, aux couleurs vert clair (#C8E6C9), vert profond (#14532D), blanc et doré.
+
+---
+
+🧩 STRUCTURE DU SITE :
+
+HEADER :
+- Logo à gauche.
+- Menu centré : Accueil | À propos | Blog | Contact.
+- Icône WhatsApp à droite (fixée avec lien direct vers le numéro).
+
+SECTION HÉRO :
+- Arrière-plan vert clair.
+- À gauche : 
+  - Petit titre : “Marabout France : Dah Amayon”.
+  - Grand titre : “Retour Affectif Rapide et Efficace – Marabout Expert en France”.
+  - Texte descriptif :
+    “Vous souffrez d’une rupture douloureuse ou d’un éloignement de l’être aimé ? Le retour affectif est une solution spirituelle puissante pour reconquérir l’amour perdu, stopper une infidélité ou raviver la passion.
+    En tant que marabout spécialisé dans le retour affectif en France, je mets à votre disposition des rituels ancestraux, des prières puissantes et des travaux énergétiques pour agir rapidement sur les sentiments de votre partenaire.”
+  - Bouton WhatsApp “Contactez-moi dès maintenant”.
+  - Trois badges en dessous (ex : rapide, discret, certifié).
+- À droite : image du marabout.
+
+SECTION “POURQUOI CHOISIR DAH AMAYON” :
+- Fond blanc, texte vert.
+- Titre centré : “Des rituels authentiques pour un retour affectif rapide”.
+- Trois cards alignées horizontalement :
+  1. Authenticité vérifiée — texte : “Certifié par le Conseil des Sages Vodun...”
+  2. Résultats rapides — texte : “Rituels exécutés en 24h...”
+  3. Confidentialité assurée — texte : “Toutes nos consultations sont discrètes...”
+
+SECTION “SOLUTIONS EXPRESS POUR URGENCES” :
+- Fond clair, texte vert foncé.
+- Titre : “Solutions express pour urgences”.
+- Texte descriptif :
+  “Intervention rapide 24h/24
+   Pour les cas critiques, nous assurons une disponibilité permanente pour des résultats immédiats.”
+- Téléphone : +2290191007556
+- Mention : “Partout en Afrique et en France (Paris, Lyon, Marseille, Bordeaux, etc.)”
+
+SECTION “SOLUTIONS SPIRITUELLES PERSONNALISÉES” :
+- Grand card fond vert profond avec texte blanc.
+- À gauche : texte de présentation.
+- En dessous à gauche : une card secondaire.
+- À droite : deux cards empilées (haut et bas) pour illustrer deux services différents.
+
+SECTION “TÉMOIGNAGES” :
+- Titre à gauche : “Témoignages de nos clients”.
+- À droite : badge “Avis clients Google ★★★★★”.
+- En dessous : trois cards de témoignages avec photo, prénom, et court texte.
+
+SECTION “À PROPOS” :
+- Deux colonnes :
+  - Gauche : texte descriptif du marabout, héritage spirituel, philosophie.
+    + Bouton “En savoir plus”.
+  - Droite : slider de 8 images (style carrousel auto).
+
+SECTION “BLOG” :
+- Titre : “Derniers articles”.
+- Trois cards de blog (image, titre, résumé, bouton lire).
+- En dessous : bouton centré “Découvrir tous nos articles”.
+
+SECTION “CALL TO ACTION” :
+- Grand bloc vert avec texte blanc : “Besoin d’aide spirituelle ? Contactez Dah Amayon dès aujourd’hui pour une consultation personnalisée.”
+- Bouton WhatsApp + bouton Email.
+
+FOOTER :
+- Texte d’introduction :
+  “Marabout France Dah Amayon offre des solutions puissantes pour le retour affectif et le bien-être en toute confidentialité.”
+- Liens de menu : Accueil, À propos, Blog, Contact, Localisations.
+- Adresses :
+  - 60 Sq. de la Couronne, 30000 Nîmes, France  
+  - Cotonou, Bénin
+- Informations de contact :
+  - Email : dahamayon8@gmail.com
+  - Téléphone : +2290191007556
+- Mention ©2025 Dah Amayon – Tous droits réservés.
+
+---
+
+🎨 STYLE GÉNÉRAL :
+- Couleurs : vert clair, vert profond, blanc, doré.
+- Polices : “Poppins” pour le texte, “Playfair Display” pour les titres.
+- Animations : effet de fade-in et slide-in via GSAP sur chaque section au scroll.
+- Design responsive (mobile-first).
+- Légères ombres et coins arrondis sur les cards.
+
+---
+
+💬 INSTRUCTIONS À L’IA :
+Crée un projet complet (HTML + Tailwind CSS + JS) avec toutes ces sections, styles et textes.
+Structure claire avec classes Tailwind cohérentes, images placeholders, et animations fluides.
+Génère le code prêt à lancer dans Replit (index.html, style.css si besoin, script.js).
