@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [currentImage, setCurrentImage] = useState(0)
@@ -22,37 +23,35 @@ const About = () => {
   }, [images.length])
 
   return (
-    <section id="apropos" className="py-20 bg-white animate-section">
+    <section id="apropos" className="py-12 sm:py-16 lg:py-20 bg-white animate-section">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-vert-profond">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold text-vert-profond">
               À Propos de Dah Amayon
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
               Marabout voyant médium de renom, je suis issu d'une longue lignée de guérisseurs et de sages spirituels du Bénin. Initié dès mon plus jeune âge aux secrets ancestraux du vodun, j'ai consacré ma vie à aider les personnes en souffrance.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
               Avec plus de 15 années d'expérience, j'ai aidé des milliers de personnes à travers la France et l'Afrique à résoudre leurs problèmes amoureux, familiaux, professionnels et spirituels. Ma mission est de rétablir l'harmonie et la paix dans votre vie grâce à des rituels puissants et authentiques.
             </p>
-            <div className="bg-vert-clair p-6 rounded-xl">
-              <h3 className="font-bold text-xl text-vert-profond mb-3">Ma philosophie</h3>
-              <p className="text-gray-700">
+            <div className="bg-vert-clair p-4 sm:p-6 rounded-xl">
+              <h3 className="font-bold text-lg sm:text-xl text-vert-profond mb-2 sm:mb-3">Ma philosophie</h3>
+              <p className="text-gray-700 text-xs sm:text-sm lg:text-base">
                 Je crois en la puissance des énergies positives et en la force de la tradition. Chaque personne mérite l'amour, le bonheur et la réussite. Mon rôle est de vous guider sur le chemin de la lumière.
               </p>
             </div>
-            <a 
-              href="#contact"
-              className="inline-block bg-vert-profond text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition"
+            <Link 
+              to="/contact"
+              className="inline-block bg-vert-profond text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-opacity-90 transition"
             >
               En savoir plus
-            </a>
+            </Link>
           </div>
 
-          {/* Right Carousel */}
           <div className="relative">
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative h-72 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
               {images.map((image, index) => (
                 <img
                   key={index}
@@ -65,15 +64,15 @@ const About = () => {
               ))}
             </div>
             
-            {/* Carousel Indicators */}
             <div className="flex justify-center mt-4 space-x-2">
               {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentImage(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentImage ? 'bg-vert-profond w-8' : 'bg-gray-300'
+                  className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
+                    index === currentImage ? 'bg-vert-profond w-6 sm:w-8' : 'bg-gray-300'
                   }`}
+                  aria-label={`Voir image ${index + 1}`}
                 />
               ))}
             </div>
