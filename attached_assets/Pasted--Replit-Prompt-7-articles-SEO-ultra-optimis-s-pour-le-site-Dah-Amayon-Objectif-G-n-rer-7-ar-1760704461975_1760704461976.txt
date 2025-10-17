@@ -1,0 +1,50 @@
+// Replit Prompt — 7 articles SEO ultra-optimisés pour le site Dah Amayon
+
+Objectif : Générer 7 articles complets, prêts à publier, optimisés SEO pour la France, sur le thème "retour d'affection". Chaque article doit inclure des images générées, une section finale Dah Amayon avec bouton WhatsApp, meta title, meta description, keywords, liens internes et FAQ optimisée pour la position zéro.
+
+Instructions pour chaque article :
+
+1. Titre H1 attractif intégrant le mot-clé principale longue traîne (ex: "Retour d’affection rapide en 24h").  
+2. Résumé (excerpt) de 2-3 lignes avec mots-clés.  
+3. Contenu HTML complet :  
+   - Paragraphes explicatifs, conseils pratiques et storytelling léger pour engagement.  
+   - Sous-titres H2/H3 avec mots-clés et synonymes :  
+     - retour d’affection rapide en 24h  
+     - retour affectif amoureux  
+     - rituel pour retour affectif  
+     - retour affectif sérieux  
+     - retour affectif puissant  
+     - retour d’affection en 72h  
+     - retour d’affection efficace  
+     - variantes : "rituel amour rapide", "revenir avec son ex", "retour affectif puissant immédiat"  
+   - Répète chaque mot-clé au moins 3 fois de manière naturelle.  
+   - Liens internes vers les autres articles (ex: « Découvrez aussi notre guide sur le retour d’affection en 72h »).  
+   - FAQ finale 3-5 questions/réponses avec mots-clés, style position zéro Google.  
+4. Images générées :  
+   - 2 à 3 images par article, style ultra-detailed, photoréaliste, 4K, illustrant le sujet de l’article (ex: couple réconcilié, rituel spirituel, énergie d’amour).  
+   - Nommer les fichiers avec mots-clés et inclure alt text correspondant.  
+5. Section finale Dah Amayon + WhatsApp :  
+   - Texte : "Vous voulez un retour affectif sérieux et efficace ? Le Dah Amayon vous guide."  
+   - Bouton WhatsApp cliquable pour consultation.  
+6. Meta title, meta description et keywords optimisés pour la France.  
+7. Slug URL cohérent avec le titre.
+
+Articles à générer :
+
+1. "Retour d’affection rapide en 24h : mythe ou réalité ?"  
+2. "Retour affectif amoureux : comment retrouver l’être aimé efficacement ?"  
+3. "Rituel pour retour affectif puissant et sérieux : guide complet"  
+4. "Retour affectif sérieux : comment distinguer un vrai rituel ?"  
+5. "Retour d’affection en 72h : étapes et conseils pratiques"  
+6. "Retour affectif efficace : astuces spirituelles et rituel Dah Amayon"  
+7. "Retour affectif puissant : rituels confirmés pour retrouver l’amour"
+
+Format final attendu :  
+- HTML complet prêt à publier  
+- Images générées et nommées correctement avec alt text  
+- Section Dah Amayon + WhatsApp intégrée  
+- Meta title, meta description, keywords  
+- Liens internes entre les articles  
+- Contenu engageant, lisible et structuré SEO pour la France  
+- Répétition naturelle des mots-clés et utilisation de synonymes  
+- FAQ position zéro optimisée
