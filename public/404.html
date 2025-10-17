@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection... - Dah Amayon</title>
-    <script>
-        // Redirect to the main app for client-side routing
-        const path = window.location.pathname;
-        window.location.replace('/' + (path === '/404.html' ? '' : '?redirect=' + path));
-    </script>
+    <title>Page non trouvée - Dah Amayon</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #C8E6C9;
+            color: #14532D;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 { font-size: 2em; margin-bottom: 1em; }
+        a { color: #14532D; text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <p>Redirection en cours...</p>
+    <div>
+        <h1>Page non trouvée</h1>
+        <p>La page que vous recherchez n'existe pas.</p>
+        <p><a href="/">Retour à l'accueil</a></p>
+    </div>
 </body>
 </html>
