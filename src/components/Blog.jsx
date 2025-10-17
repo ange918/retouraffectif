@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { articlesData } from '../data/articlesData'
 
 const Blog = () => {
@@ -33,27 +34,27 @@ const Blog = () => {
                 <p className="text-gray-700 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
                   {article.excerpt}
                 </p>
-                <a 
-                  href={article.link}
+                <Link 
+                  to={article.link}
                   className="text-vert-profond text-sm sm:text-base font-semibold hover:text-dore transition inline-flex items-center"
                 >
                   Lire la suite
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center">
-          <a 
-            href="/blog"
+          <Link 
+            to="/blog"
             className="inline-block bg-vert-profond text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-opacity-90 transition"
           >
             Découvrir tous nos articles
-          </a>
+          </Link>
         </div>
       </div>
     </section>
