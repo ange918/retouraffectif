@@ -5,14 +5,14 @@ const About = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.23.jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.24 (1).jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.24.jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.25 (1).jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.26.jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.27 (1).jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.28.jpeg",
-    "src/images/WhatsApp Image 2025-10-16 at 20.32.28 (1).jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.23.jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.24 (1).jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.24.jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.25 (1).jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.26.jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.27 (1).jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.28.jpeg",
+    "/images/WhatsApp Image 2025-10-16 at 20.32.28 (1).jpeg",
   ];
 
   useEffect(() => {
