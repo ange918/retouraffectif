@@ -81,7 +81,11 @@ npm run preview  # Prévisualiser la version de production
 - Le serveur Vite est configuré pour écouter sur `0.0.0.0:5000`
 - HMR WebSocket configuré pour l'environnement Replit
 - GSAP ScrollTrigger se rafraîchit automatiquement lors des changements de route
-- Deployment configuré en mode "autoscale"
+- **Déploiement**: Mode "autoscale" avec `serve -s` pour support SPA
+  - Fichier `public/_redirects` pour rediriger toutes les routes vers index.html
+  - Fichier `public/404.html` comme page d'erreur de fallback
+  - Package `serve` installé pour servir les fichiers statiques en production
+  - Garantit que les routes React Router (articles de blog) fonctionnent après déploiement
 
 ## Responsive Design
 - Textes adaptés pour mobile : text-sm, text-xs sur petits écrans
@@ -99,5 +103,9 @@ npm run preview  # Prévisualiser la version de production
 17 octobre 2025 - Migration des images de `src/images/` vers `public/images/` avec mise à jour de tous les chemins pour éviter les erreurs 404 après déploiement
 
 ## Historique des changements
-- **17 octobre 2025**: Migration des images vers public/images/ pour compatibilité déploiement
+- **17 octobre 2025**: 
+  - Migration des images vers public/images/ pour compatibilité déploiement
+  - Configuration SPA pour résoudre les erreurs 404 des articles après déploiement
+  - Ajout de `serve` pour servir les fichiers statiques en production
+  - Fichiers `_redirects` et `404.html` pour support complet du routing React Router
 - **16 octobre 2025**: Transformation complète en multipage avec React Router, design responsive, icônes WhatsApp, badges et images
