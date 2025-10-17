@@ -90,9 +90,14 @@ npm run preview  # Prévisualiser la version de production
 - Navigation mobile avec menu hamburger
 
 ## Assets
-- Badges de certification dans `/public/` (Bénin, Secret, Garantie)
-- Images hébergées via Unsplash pour les composants
-- Icônes via React Icons (Font Awesome)
+- **Images locales**: Toutes les images sont stockées dans `/public/images/` pour un déploiement sans erreur 404
+- **Badges de certification**: Fichiers PNG dans `/public/` (Bénin, Secret, Garantie)
+- **Chemins d'images**: Tous les chemins utilisent le format `/images/nom_fichier.ext` (chemins absolus depuis public)
+- **Icônes**: React Icons (Font Awesome)
 
 ## Dernière mise à jour
-16 octobre 2025 - Transformation complète en multipage avec React Router, design responsive, icônes WhatsApp, badges et images
+17 octobre 2025 - Migration des images de `src/images/` vers `public/images/` avec mise à jour de tous les chemins pour éviter les erreurs 404 après déploiement
+
+## Historique des changements
+- **17 octobre 2025**: Migration des images vers public/images/ pour compatibilité déploiement
+- **16 octobre 2025**: Transformation complète en multipage avec React Router, design responsive, icônes WhatsApp, badges et images
