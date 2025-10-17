@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="flex-1 w-full">
             <div className="relative">
               <img
-                src="src/images/Hero.jpeg"
+                src="/images/Hero.jpeg"
                 alt="Dah Amayon"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
